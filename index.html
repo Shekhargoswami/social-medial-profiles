@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profiles</title>
+    <style>
+     
+
+      body html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #000;
+        
+      }
+      .container {
+        justify-content: center;
+    background: #000;
+        text-align: center;
+    padding: 10%;
+        border-radius: 20px;
+        align-items: center;
+        height: 100%;
+        display: flex;
+    }
+    .box {
+   
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px;
+        background-color: rgb(18, 18, 18);
+        border-radius: 10%;
+        box-shadow: 14px 14px rgb(21, 20, 21);
+    }
+    
+    .logos {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    
+
+
+    .facebook-logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    animation: rotate 2s infinite;
+    }
+    
+    .github-logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    animation: rotate 2s infinite;
+    }
+    
+    .linkedin-logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    animation: rotate 2s infinite;
+    }
+    
+    .twitter-logo {
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    animation: rotate 2s infinite;
+    }
+    
+    
+    button {
+      padding: 10px 20px;
+      box-shadow: 5px 2px;
+
+  }
+  span {
+      color: rgb(212, 162, 194);
+  }
+  button:hover {
+    background-color: rgb(227, 186, 214);
+}
+input {
+  color: black;
+  padding: 10px 50px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: rgb(232, 228, 228);
+
+}
+      
+ 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    
+        <div class="box">
+            <h1>Social Media Profiles</h1>
+            <input id="User" type="text" placeholder="Username">
+            
+            <br><br>
+            <a id="ans" href="#" target="_blank"></a><br>
+       
+ <div class="logos">
+     
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram Logo" onclick="openInstagramProfile()">
+            <img class="logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" onclick="openGitHubProfile()">
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" onclick="openLinkedInProfile()">
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook Logo" onclick="openFacebookProfile()">
+    
+    
+    
+        </div>
+    </div>
+   
+
+<script> 
+function openInstagramProfile() {
+    let input = document.getElementById("User");
+    let ans = document.getElementById("ans");
+    ans.href = "https://www.instagram.com/" + input.value;
+    ans.innerHTML = "View Instagram Profile";
+}
+
+function openGitHubProfile() {
+    let input = document.getElementById("User");
+    let ans = document.getElementById("ans");
+    ans.href = "https://github.com/" + input.value;
+    ans.innerHTML = "View GitHub Profile";
+}
+
+function openLinkedInProfile() {
+    let input = document.getElementById("User");
+    let ans = document.getElementById("ans");
+    ans.href = "https://www.linkedin.com/in/" + input.value;
+    ans.innerHTML = "View LinkedIn Profile";
+}
+
+function openFacebookProfile() {
+    let input = document.getElementById("User");
+    let ans = document.getElementById("ans");
+    ans.href = "https://www.facebook.com/" + input.value;
+    ans.innerHTML = "View Facebook Profile";
+}
+
+function openProfile() {
+    let input = document.getElementById("User");
+    let ans = document.getElementById("ans");
+    ans.href = "https://www.instagram.com/" + input.value;
+    ans.innerHTML = "View Profile";
+}
+
+</script>
+</body>
+</html>
